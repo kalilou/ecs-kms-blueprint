@@ -3,7 +3,35 @@
 # How it works 
 
 - Create bucket which should contain the docker secrets 
-- Create the KMS key in your AWS account 
+- Create the KMS key in your AWS account and assign the correct policy with the following actions and assign resources which are allow to perform those actions. 
+```
+[
+    "kms:Put*",
+    "kms:Get*",
+    "kms:List*",
+    "kms:Create*",
+    "kms:Enable*",
+    "kms:Update*",
+    "kms:Delete*",
+    "kms:Revoke*",
+    "kms:Disable*",
+    "kms:Describe*",
+    "kms:Encrypt",
+    "kms:Decrypt",
+    "kms:ReEncrypt*",
+    "kms:GenerateDataKey*",
+    "kms:CancelKeyDeletion",
+    "kms:ScheduleKeyDeletion",
+    "kms:List*",
+    "kms:Describe*",
+    "kms:Get*",
+    "kms:Encrypt",
+    "kms:Decrypt",
+    "kms:ReEncrypt*",
+    "kms:DescribeKey",
+    "kms:GenerateDataKey*"
+]
+```  
 - Make sure you create a role with a similar policy below which needs to be assigned the task definition or user using the kms key to encrypt the secrets and push to s3 
 ```
 {
