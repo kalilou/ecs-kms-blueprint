@@ -90,9 +90,9 @@ You can also run ``` ruby s3_kms_decrypt.rb ``` to check your secrets decrypted 
 
 # How to incorporate into the Dockerfile 
 
-- Make your container will have a role mention above assigned to the task definition 
+- Make sure your container have a role as mentioned above assigned to the task definition 
 - In the example folder ```example``` you will have two files decrypt-var.sh and export.sh 
-- ```decrypt-var.sh``` will decrypt the secrets and ```export.sh``` will export the decrypt values 
+- ```decrypt-var.sh``` will decrypt the secrets and ```export.sh``` will export the decrypted values 
 
 
 
