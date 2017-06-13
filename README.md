@@ -2,7 +2,7 @@
 
 # How it works 
 
-- Create bucket which should contain the docker secrets 
+- Create bucket which will contain the docker encrypted secrets 
 - Create the KMS key in your AWS account and assign the correct policy with the following actions and assign resources which are allow to perform those actions. 
 ```
 [
