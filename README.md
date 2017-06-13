@@ -77,11 +77,11 @@
 # How developer will encrypt and upload to s3 bucket 
 
 - Install awscli  ``` pip install awscli ``` 
-- Configure the aws credentials  ``` aws configure ```  (~/.aws/credentials and ~/.aws/config), make sure your user has the policy mention above. 
+- Configure the aws credentials  ``` aws configure ```  (~/.aws/credentials and ~/.aws/config), make sure your user has the policy mentioned above. 
 - Install Ruby, for Mac user ``` brew install ruby ```
 
 The folder ``` encryption ``` is where you will encrypt your secrets and upload to s3.
-The file ```environment_vars ``` contains the secrests you would like to encrypt.
+The file ```environment_vars ``` contains the secrets you would like to encrypt.
 The file ``` s3_config.json ``` contains s3 bucket and kms key info.
 
 When that is done you can just run ``` ruby s3_kms_encrypt.rb ``` which will encrypt the secrets and upload them to s3 
