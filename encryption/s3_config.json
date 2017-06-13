@@ -1,0 +1,6 @@
+{
+	"KMS_KEYNAME": "Docker", 
+	"S3_BUCKETNAME": "tingcore-docker-kms",
+	"S3_BUCKET_KEY": "spring-config-server"
+
+}
