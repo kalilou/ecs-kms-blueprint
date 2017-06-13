@@ -17,4 +17,4 @@ RUN chmod +x /decrypt-var.sh && \
     chmod +x /export.sh && \ 
 
 
-CMD ["/export.sh", "your_script"]
+CMD ["/export.sh", "your_startup_script"]
